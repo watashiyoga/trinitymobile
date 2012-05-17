@@ -1,6 +1,13 @@
 Trinity Mobile Changelog
 ------------------------
 
+Version 0.1.2
+-Moved navigation functions to new trinitymobile-navigation.js file
+-Added left-to-right and right-to-left swipe gestures for every 
+page to make navigation easier
+-Special service times will now inform the user if there are no
+special services currently scheduled
+
 Version 0.1.1
 -Created separate Regular and Special tabs for Service Times.
 -Added touchscreen swiping to Service Times page.
