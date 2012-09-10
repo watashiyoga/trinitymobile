@@ -1,6 +1,20 @@
 Trinity Mobile Changelog
 ------------------------
 
+Version 1.0
+-Tested and working on Android 2.3 (Gingerbread), 4.0 (Ice Cream Sandwich), and 4.1 (Jelly Bean)
+-Tested and working on Android phones and tablets
+-There's only one theme now, since saving theme settings after the app closed wasn't practical
+-Removed trinitymobile-settings.js file, which handled theme changes
+-Menu button doesn't do anything now, since it was just used to select a theme in previous versions
+-UI overhaul, darker theme, new icons, back and exit buttons
+-Splash screen
+-Code clean-up
+-Updated to use jQuery Mobile 1.1.1
+-Updated to use Cordova 2.0.0 (formerly PhoneGap)
+-Now only two permissions are required when building for Android: Access Network State and Internet
+-twitterResponse method no longer attempts to get tweet source (from web, from app, etc)
+
 Version 0.1.2
 -Moved navigation functions to new trinitymobile-navigation.js file
 -Added left-to-right and right-to-left swipe gestures for every 
