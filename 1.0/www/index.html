@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Trinity Mobile</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="themes/trinitymobile.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile.structure-1.1.1.min.css" /> 
+<link rel="stylesheet" href="styles/trinitymobile-custom.css"/>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="scripts/jquery.ui.map.full.min.js"></script>
+<script src="scripts/cordova-2.0.0.js"></script>
+<script src="scripts/trinjal.js"></script>
+<script src="scripts/trinitymobile-loader.js"></script>
+<script src="scripts/trinitymobile-main.js"></script>
+<script src="scripts/trinitymobile-navigation.js"></script>
+<script src="scripts/trinitymobile-directions.js"></script>
+</head>
+<body>
+<div data-role="page" data-theme="a" id="pageMain">
+    <div data-role="header" data-theme="a">
+	<a onClick="onMainBackKeyDown();">Exit</a><h1>Trinity Mobile</h1>
+	</div>
+	
+	<div data-role="content" id="tcMain" style="text-align: center; margin: 2% 5% 0 5%;">
+	<table style="width:100%;">
+	<tr>
+	<td>
+	<div id="news" class="mainLinks">
+	<a href="#pageNews">
+	<img src="img/hdpi/tc_news.png">
+	<br/>News</a>
+	</div>
+	</td>
+	<td>
+	<div id="blog" class="mainLinks">
+	<a href="#pageBlog">
+	<img src="img/hdpi/tc_blog.png">
+	<br/>Blog</a>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<div id="twitter" class="mainLinks">
+    <a href="#pageTwitter">
+    <img src="img/hdpi/tc_twitter.png">
+    <br/>Twitter</a>
+    </div>
+    </td>
+    <td>
+    <div id="facebook" class="mainLinks">
+    <a href="#pageFacebook">
+    <img src="img/hdpi/tc_facebook.png">
+    <br/>Facebook</a>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <div id="serviceTimes" class="mainLinks">
+    <a href="#pageServiceTimes">
+    <img src="img/hdpi/tc_servicetimes.png">
+    <br/>Service Times</a>
+    </div>
+    </td>
+    <td>
+    <div id="calendar" class="mainLinks">
+    <a href="#pageCalendar">
+    <img src="img/hdpi/tc_calendar.png">
+    <br/>Calendar</a>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <div id="map" class="mainLinks">
+    <a href="#pageMap">
+    <img src="img/hdpi/tc_directions.png">
+    <br/>Directions</a>
+    </div>
+    </td>
+    <td>
+    <div id="phone" class="mainLinks">
+    <a href="tel:1-610-253-0792">
+    <img src="img/hdpi/tc_phone.png">
+    <br/>Call Trinity</a>
+    </div>
+    </td>
+    </tr>
+	</table>
+	</div>
+
+</div>
+
+<div data-role="page" data-theme="a" id="pageNews">
+
+	<div data-role="header" data-theme="a">
+		<a href="#pageMain">Back</a><h1>Trinity News</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" id="tcNews">	
+			<ul data-role="listview" data-inset="false" id="tcNews-ul">
+			</ul>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+<div data-role="page" data-theme="a" id="pageBlog">
+
+	<div data-role="header" data-theme="a">
+		<a href="#pageMain">Back</a><h1>Trinity Blog</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" id="tcBlog">	
+			<ul data-role="listview" data-inset="false" id="tcBlog-ul">
+			</ul>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" data-theme="a" id="pageTwitter">
+
+	<div data-role="header" data-theme="a">
+		<a href="#pageMain">Back</a><h1>Trinity Twitter</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" id="tcTwitter">	
+			<ul data-role="listview" data-inset="false" id="tcTwitter-ul">
+			</ul>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" data-theme="a" id="pageFacebook">
+
+	<div data-role="header" data-theme="a">
+		<a href="#pageMain">Back</a><h1>Trinity Facebook</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" id="tcFacebook">	
+			
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" data-theme="a" id="pageServiceTimes">
+
+	<div data-role="header" data-theme="a">
+		<a href="#pageMain">Back</a><h1>Service Times</h1>
+		
+<div data-role="navbar">
+	<ul>
+		<li><a href="#pageServiceTimes" class="ui-btn-active">Regular</a></li>
+		<li><a href="#pageSpecialServiceTimes">Special</a></li>
+	</ul>
+</div><!-- /navbar -->
+		
+	</div><!-- /header -->
+
+	<div data-role="content" id="tcServiceTimes">	
+			
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+
+<div data-role="page" data-theme="a" id="pageSpecialServiceTimes">
+
+	<div data-role="header" data-theme="a">
+		<a href="#pageMain">Back</a><h1>Service Times</h1>
+		
+<div data-role="navbar">
+	<ul>
+		<li><a href="#pageServiceTimes">Regular</a></li>
+		<li><a href="#pageSpecialServiceTimes" class="ui-btn-active">Special</a></li>
+	</ul>
+</div><!-- /navbar -->
+		
+	</div><!-- /header -->
+
+	<div data-role="content" id="tcSpecialServiceTimes">	
+			
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+
+<div data-role="page" data-theme="a" id="pageCalendar">
+
+	<div data-role="header" data-theme="a">
+		<a href="#pageMain">Back</a><h1>Calendar</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" id="tcCalendar">
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" data-theme="a" id="pageMap">
+
+			<div data-role="header" data-theme="a">
+				<a href="#pageMain">Back</a><h1>Directions</h1>
+			</div>
+			<div data-role="content" id="tcMap">	
+					<div id="map_canvas"></div>
+				    <p>
+						<label for="from">From</label>
+						<input id="from" type="text" value="" />
+					</p>
+					<p>
+						<label for="to">To</label>
+						<input id="to" type="text" value="234 Spring Garden St., Easton, PA" />
+					</p>
+					<a id="submit" href="#" data-role="button" data-icon="search">Get directions</a>
+			</div>
+			
+			<div id="results" style="display:none;">
+				<div>Results</div>
+				<div id="directions"></div>
+			</div>
+						
+</div>
+
+</body>
+</html>
