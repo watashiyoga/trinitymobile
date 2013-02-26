@@ -1,8 +1,8 @@
-Trinity Mobile 1.0
+Trinity Mobile 1.0.1
 
-Requires Android 2.3.3 (Gingerbread) or higher 
+Requires Android 2.3 (Gingerbread) or higher 
 
-Trinity Mobile 1.0 is released under the open source Mozilla Public License Version 2.0.
+Trinity Mobile 1.0.1 is released under the open source Mozilla Public License Version 2.0.
 You are free to use and modify the source as long as you adhere to the requirements of the MPL 2.0. 
 You can find a complete copy of the MPL 2.0 in the included LICENSE file.  Each source file contains
 an appropriate licensing header block comment.
@@ -10,7 +10,7 @@ an appropriate licensing header block comment.
 Before you build:
 
 Trinity Mobile was built using Eclipse (www.eclipse.org), the Google Android SDK (developer.android.com/sdk),
-and third-party JavaScript tools or libraries.  Trinity Episcopal Church and the developer(s) of Trinity Mobile are not associated with Eclipse, Google, Android, jQuery Mobile, the jquery-ui-map plugin, or PhoneGap in any way.
+and third-party JavaScript tools or libraries.  Trinity Episcopal Church and the developer(s) of Trinity Mobile are not associated with Eclipse, Google, Android, jQuery Mobile, the jquery-ui-map plugin, Cordova, or PhoneGap in any way.
 
 Trinity Mobile uses the following JavaScript libraries/tools:
 
@@ -21,5 +21,13 @@ jQuery Mobile - available here: http://www.jquerymobile.com
 jquery-ui-map - Google Maps Version 3 plugin for JQuery Mobile, available here: http://code.google.com/p/jquery-ui-map/
 
 PhoneGap/Cordova - available here: http://phonegap.com/
+
+You'll need to use the following permissions in your AndriodManifest.xml file:
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 
 

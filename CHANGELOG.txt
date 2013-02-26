@@ -1,6 +1,30 @@
 Trinity Mobile Changelog
 ------------------------
 
+Version 1.0.1
+-Support for earlier versions of Gingerbread
+-Support for Android Jelly Bean (4.1 to 4.2.2)
+-Easier to read lighter theme
+-Faster load time on app launch
+-Uses CSS3 media-queries to detect screen size
+-Separate custom CSS stylesheets - one for tablets, one for phones
+-Automatically uses appropriately sized icons and text for tablets or phones
+-Removed custom Exit button
+-Android back button works as expected for Android apps
+-Directions section automatically detects device's location using GPS and wifi
+-trinitymobile-navigation.js renamed trinitymobile-swipes.js for clarity
+-trinitymobile-main.js serviceTimesResponse function rewritten to fix issue with getting service times
+-trinitymobile-main.js twitterResponse function adjusted to remove Twitter handle from tweets
+-Updated to use Cordova-2.3.0
+-Updated to use jQuery Mobile 1.2.0
+-Updated to use jQuery 1.8.2
+-Removed inline styles inserted by trinitymobile-main.js functions wherever possible
+-Default text sizes whenever possible - no more tiny phone text on tablets
+-All icons have had DPI adjusted to values recommended by Android Design language (Holo)
+-Easier to see where a Blog post ends and a new post begins
+-Easier to read Facebook posts
+-Removed gradient backgrounds from tweets
+
 Version 1.0
 -Tested and working on Android 2.3 (Gingerbread), 4.0 (Ice Cream Sandwich), and 4.1 (Jelly Bean)
 -Tested and working on Android phones and tablets
